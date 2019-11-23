@@ -1,27 +1,32 @@
 #include "Failure.h"
-//#include <iostream>
+#include <iostream>
 
-//Mode* Failure::instance_ = 0;
+Mode* Failure::instance_ = 0;
 
-//Mode* Failure::getInstance()
-//{	
-//	if(instance_ == 0)
-//	{
-//		instance_ = new PowerOnSelfTest();
-//	}
-//
-//	return instance_;
-//}
+Mode* Failure::getInstance()
+{	
+	if(instance_ == 0)
+	{
+		instance_ = new Failure();
+	}
+	std::cout << "Entering Failure state";
+	return instance_;
+}
 
 
-//	void restart(EmbeddedSystemX* esx)
-//{
-// std::cout << "Initializing: initialize";
-// chMode(esx, PowerOnSelfTest::getInstance());
-//}
+void Failure::restart(EmbeddedSystemX* esx)
+{
+	std::cout << "Failure: restarting";
+	chMode(esx, PowerOnSelfTest::getInstance());
+}
 
-//void startInitializing()
-//{
-// std::cout << "Initializing: Start Initializing";
-//}
+void Failure::display(EmbeddedSystemX* esx, int ErrorNo)
+{
+	std::cout << "Failure: Error No: " << ErrorNo << " encountered."<< std::endl;
+	restart(esx);
+}
+
+Failure::Failure()
+{
+}
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "Mode.h"
 #include "Initializing.h"
+#include "Failure.h"
 class PowerOnSelfTest :
 	public Mode
 {

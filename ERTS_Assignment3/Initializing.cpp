@@ -9,19 +9,20 @@ Mode* Initializing::getInstance()
 	{
 		instance_ = new Initializing();
 	}
-	std::cout << "In Initializing state";
+	std::cout << "Entering Initializing state";
 	return instance_; 
 }
 
 void Initializing::initialized(EmbeddedSystemX* esx)
 {
- std::cout << "Initializing: initialize";
+ std::cout << "Initializing: Initialized";
  //chMode(esx, Operational::getInstance());
 }
 
-void Initializing::startInitializing()
+void Initializing::startInitializing(EmbeddedSystemX* esx)
 {
 	std::cout << "Initializing: Start Initializing";
+	initialized(esx);
 }
 
 Initializing::Initializing()

@@ -1,5 +1,6 @@
 #pragma once
 #include "Mode.h"
+#include "Operational.h"
 class Initializing :
 	public Mode
 {
@@ -8,7 +9,7 @@ public:
 
 	void initialized(EmbeddedSystemX*) override;
 
-	void startInitializing(); //own
+	void startInitializing(EmbeddedSystemX*); //own
 protected:
 	Initializing();
 
