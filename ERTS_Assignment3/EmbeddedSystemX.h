@@ -10,9 +10,8 @@
 
 class EmbeddedSystemX
 {
-	Mode* mode_;
-
 public:
+	EmbeddedSystemX();
 	void selfTestOK();
 	void initialized();
 	void restart();
@@ -29,18 +28,12 @@ public:
 	void eventY();
 	void chMode(Mode* state);
 
-	static EmbeddedSystemX* getInstance();
-
-protected:
-	EmbeddedSystemX();
-
 private:
+	Mode* mode_;
 	int versionNo_;
 	char* name_;
 
-
 	friend class Mode;
-	static EmbeddedSystemX* instance_;
 
 };
 

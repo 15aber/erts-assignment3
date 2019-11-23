@@ -7,13 +7,14 @@ class PowerOnSelfTest :
 public:
 	static Mode* getInstance();
 
-	virtual void selfTestFailed(EmbeddedSystemX*, int ErrorNo);
-	virtual void selfTestOK(EmbeddedSystemX*);
+	void selfTestFailed(EmbeddedSystemX*, int ErrorNo) override;
+	void selfTestOk(EmbeddedSystemX*) override;
 
 	void systemSelfTest(); //own
-
+	
 protected:
 	PowerOnSelfTest();
+
 private:
 	static Mode* instance_;
 };

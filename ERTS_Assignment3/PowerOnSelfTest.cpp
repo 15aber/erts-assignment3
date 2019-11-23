@@ -1,4 +1,5 @@
 #include "PowerOnSelfTest.h"
+#include <iostream>
 
 Mode* PowerOnSelfTest::instance_ = 0;
 
@@ -12,10 +13,21 @@ Mode* PowerOnSelfTest::getInstance()
 	return instance_;
 }
 
-//void PowerOnSelfTest::selfTestFailed(EmbeddedSystemX*, int ErrorNo)
-//{}
+void PowerOnSelfTest::selfTestFailed(EmbeddedSystemX* esx, int ErrorNo)
+{
+	std::cout << "SelfTestFailed";
+}
 
-
-void PowerOnSelfTest::selfTestOK(EmbeddedSystemX* esx){
+void PowerOnSelfTest::selfTestOk(EmbeddedSystemX* esx)
+{
+	std::cout << "SelfTest OK";
 	chMode(esx, Initializing::getInstance());
 }
+
+void PowerOnSelfTest::systemSelfTest()
+{
+	std::cout << "Running System Self Test...";
+}
+
+PowerOnSelfTest::PowerOnSelfTest()
+= default;

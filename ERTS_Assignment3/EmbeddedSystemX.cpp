@@ -23,7 +23,7 @@ void EmbeddedSystemX::configure()
 
 void EmbeddedSystemX::configurationEnded()
 {
-	mode_->configuratoinEnded(this);
+	mode_->configurationEnded(this);
 }
 
 void EmbeddedSystemX::exit()
@@ -72,18 +72,6 @@ void EmbeddedSystemX::eventX()
 
 void EmbeddedSystemX::eventY()
 {
-}
-
-EmbeddedSystemX* EmbeddedSystemX::instance_ = 0;
- 
-EmbeddedSystemX* EmbeddedSystemX::getInstance()
-{
-	if (instance_ == 0)
-	{
-		instance_ = new EmbeddedSystemX;
-	}
-
-	return instance_;
 }
 
 EmbeddedSystemX::EmbeddedSystemX()

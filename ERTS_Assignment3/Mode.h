@@ -1,5 +1,4 @@
 #pragma once
-#include "EmbeddedSystemX.h"
 
 class EmbeddedSystemX;
 
@@ -15,7 +14,7 @@ public:
 	virtual void display(EmbeddedSystemX*, int errorNo);
 	virtual void start(EmbeddedSystemX*);
 	virtual void configure(EmbeddedSystemX*);
-	virtual void configuratoinEnded(EmbeddedSystemX*);
+	virtual void configurationEnded(EmbeddedSystemX*);
 	virtual void configX(EmbeddedSystemX*);
 	virtual void stop(EmbeddedSystemX*);
 	virtual void suspend(EmbeddedSystemX*);
@@ -23,7 +22,7 @@ public:
 
 protected:
 	void chMode(EmbeddedSystemX*, Mode*);
-	Mode() {};
+	Mode();
 
 private:
 
