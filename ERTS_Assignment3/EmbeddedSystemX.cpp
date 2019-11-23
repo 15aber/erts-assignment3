@@ -27,9 +27,9 @@ void EmbeddedSystemX::configurationEnded()
 	mode_->configurationEnded(this);
 }
 
-void EmbeddedSystemX::exit()
+void EmbeddedSystemX::exitStateMachine()
 {
-	mode_->exit(this);
+	mode_->exitStateMachine(this);
 }
 
 void EmbeddedSystemX::stop()

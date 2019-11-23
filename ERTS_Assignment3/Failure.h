@@ -8,6 +8,7 @@ public:
 	static Mode* getInstance();
 
 	void restart(EmbeddedSystemX*) override;
+	void exitStateMachine(EmbeddedSystemX*) override;
 
 	void display(EmbeddedSystemX* esx, int ErrorNo); //own
 protected:

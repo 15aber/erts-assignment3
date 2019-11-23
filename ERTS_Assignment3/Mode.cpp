@@ -18,7 +18,7 @@ void Mode::initialized(EmbeddedSystemX*)
 {
 }
 
-void Mode::exit(EmbeddedSystemX*)
+void Mode::exitStateMachine(EmbeddedSystemX*)
 {
 }
 

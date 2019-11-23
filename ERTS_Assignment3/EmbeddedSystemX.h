@@ -17,7 +17,7 @@ public:
 	void restart();
 	void configure();
 	void configurationEnded();
-	void exit();
+	void exitStateMachine();
 	void stop();
 	void start();
 	void suspend();

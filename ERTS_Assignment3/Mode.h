@@ -9,7 +9,7 @@ public:
 	virtual void selfTestOk(EmbeddedSystemX*);
 	virtual void systemSelfTest(EmbeddedSystemX*);
 	virtual void initialized(EmbeddedSystemX*);
-	virtual void exit(EmbeddedSystemX*);
+	virtual void exitStateMachine(EmbeddedSystemX*);
 	virtual void restart(EmbeddedSystemX*);
 	virtual void display(EmbeddedSystemX*, int errorNo);
 	virtual void start(EmbeddedSystemX*);
