@@ -1,5 +1,6 @@
 #include "Initializing.h"
 #include <iostream>
+#include "Ready.h"
 
 Mode* Initializing::instance_ = 0;
 
@@ -16,7 +17,7 @@ Mode* Initializing::getInstance()
 void Initializing::initialized(EmbeddedSystemX* esx)
 {
  std::cout << "Initializing: Initialized" << std::endl;
- //chMode(esx, Operational::getInstance());
+ chMode(esx, Ready::getInstance());
 }
 
 void Initializing::startInitializing(EmbeddedSystemX* esx)

@@ -24,6 +24,7 @@ public:
 	void resume();
 	void selfTestFailed(int);
 	void configX();
+	void readConfigurationInfo();
 	void eventX();
 	void eventY();
 	void chMode(Mode* state);

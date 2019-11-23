@@ -28,8 +28,8 @@ void PowerOnSelfTest::selfTestOk(EmbeddedSystemX* esx)
 void PowerOnSelfTest::systemSelfTest(EmbeddedSystemX* esx)
 {
 	std::cout << "PowerOnSelfTest: Running System Self Test..." << std::endl;
-	//selfTestOk(esx);
-	selfTestFailed(esx, 1);
+	selfTestOk(esx);
+	//selfTestFailed(esx, 1);
 }
 
 PowerOnSelfTest::PowerOnSelfTest()

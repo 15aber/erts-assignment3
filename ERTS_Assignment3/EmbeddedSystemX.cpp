@@ -62,6 +62,11 @@ void EmbeddedSystemX::configX()
 	mode_->configX(this);
 }
 
+void EmbeddedSystemX::readConfigurationInfo()
+{
+	mode_->readConfigurationInfo(this);
+}
+
 void EmbeddedSystemX::chMode(Mode* state)
 {
 	this->mode_ = state;

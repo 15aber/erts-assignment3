@@ -46,6 +46,10 @@ void Mode::configX(EmbeddedSystemX*)
 {
 }
 
+void Mode::readConfigurationInfo(EmbeddedSystemX*)
+{
+}
+
 void Mode::stop(EmbeddedSystemX*)
 {
 }

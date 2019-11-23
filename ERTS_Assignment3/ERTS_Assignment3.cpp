@@ -8,8 +8,15 @@ int main()
 {
     std::cout << "Hello World!\n";
 	EmbeddedSystemX esx;
-	esx.exitStateMachine();
-	
+	esx.initialized();
+	esx.start();
+	esx.suspend();
+	esx.resume();
+	esx.stop();
+	esx.configure();
+	esx.readConfigurationInfo();
+	esx.configX();
+	esx.configurationEnded();
 	
 }
 

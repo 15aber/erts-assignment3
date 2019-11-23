@@ -16,6 +16,7 @@ public:
 	virtual void configure(EmbeddedSystemX*);
 	virtual void configurationEnded(EmbeddedSystemX*);
 	virtual void configX(EmbeddedSystemX*);
+	virtual void readConfigurationInfo(EmbeddedSystemX*);
 	virtual void stop(EmbeddedSystemX*);
 	virtual void suspend(EmbeddedSystemX*);
 	virtual void resume(EmbeddedSystemX*);
