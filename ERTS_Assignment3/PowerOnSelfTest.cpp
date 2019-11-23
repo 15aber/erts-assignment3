@@ -1,6 +1,8 @@
 #include "PowerOnSelfTest.h"
 #include <iostream>
 
+int test = 0;
+
 Mode* PowerOnSelfTest::instance_ = 0;
 
 Mode* PowerOnSelfTest::getInstance()
@@ -28,8 +30,11 @@ void PowerOnSelfTest::selfTestOk(EmbeddedSystemX* esx)
 void PowerOnSelfTest::systemSelfTest(EmbeddedSystemX* esx)
 {
 	std::cout << "PowerOnSelfTest: Running System Self Test..." << std::endl;
-	selfTestOk(esx);
-	//selfTestFailed(esx, 1);
+
+	if((++test)%2 == 0)
+		selfTestOk(esx);
+	else
+		selfTestFailed(esx, 1);
 }
 
 PowerOnSelfTest::PowerOnSelfTest()

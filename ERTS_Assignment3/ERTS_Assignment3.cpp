@@ -8,6 +8,8 @@ int main()
 {
     std::cout << "Hello World!\n";
 	EmbeddedSystemX esx;
+	esx.restart();
+	esx.systemSelfTest();
 	esx.startInitializing();
 	esx.start();
 	esx.suspend();
@@ -17,7 +19,9 @@ int main()
 	esx.readConfigurationInfo();
 	esx.configX();
 	esx.configurationEnded();
-	
+	esx.restart();
+	esx.systemSelfTest();
+	esx.exitStateMachine();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

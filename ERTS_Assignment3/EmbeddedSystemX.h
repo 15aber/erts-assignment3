@@ -23,6 +23,7 @@ public:
 	void start();
 	void suspend();
 	void resume();
+	void systemSelfTest();
 	void selfTestFailed(int);
 	void configX();
 	void readConfigurationInfo();

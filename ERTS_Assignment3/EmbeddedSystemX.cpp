@@ -57,6 +57,11 @@ void EmbeddedSystemX::resume()
 	mode_->resume(this);
 }
 
+void EmbeddedSystemX::systemSelfTest()
+{
+	mode_->systemSelfTest(this);
+}
+
 void EmbeddedSystemX::selfTestFailed(int errorNo)
 {
 	mode_->selfTestFailed(this, errorNo);
