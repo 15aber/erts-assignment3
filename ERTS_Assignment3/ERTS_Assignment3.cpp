@@ -8,7 +8,7 @@ int main()
 {
     std::cout << "Hello World!\n";
 	EmbeddedSystemX esx;
-	esx.initialized();
+	esx.startInitializing();
 	esx.start();
 	esx.suspend();
 	esx.resume();

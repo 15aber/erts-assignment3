@@ -12,6 +12,11 @@ void EmbeddedSystemX::initialized()
 	mode_->initialized(this);
 }
 
+void EmbeddedSystemX::startInitializing()
+{
+	mode_->startInitializing(this);
+}
+
 void EmbeddedSystemX::restart()
 {
 	mode_->restart(this);

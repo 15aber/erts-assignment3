@@ -14,6 +14,7 @@ public:
 	EmbeddedSystemX();
 	void selfTestOK();
 	void initialized();
+	void startInitializing();
 	void restart();
 	void configure();
 	void configurationEnded();

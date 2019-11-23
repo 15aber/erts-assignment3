@@ -18,6 +18,10 @@ void Mode::initialized(EmbeddedSystemX*)
 {
 }
 
+void Mode::startInitializing(EmbeddedSystemX*)
+{
+}
+
 void Mode::exitStateMachine(EmbeddedSystemX*)
 {
 }
