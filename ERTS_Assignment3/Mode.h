@@ -7,7 +7,7 @@ class Mode
 public:
 	virtual	void selfTestFailed(EmbeddedSystemX*, int errorNo);
 	virtual void selfTestOk(EmbeddedSystemX*);
-	//virtual void systemSelfTest(EmbeddedSystemX*);
+	virtual void systemSelfTest(EmbeddedSystemX*);
 	virtual void initialized(EmbeddedSystemX*);
 	virtual void exit(EmbeddedSystemX*);
 	virtual void restart(EmbeddedSystemX*);

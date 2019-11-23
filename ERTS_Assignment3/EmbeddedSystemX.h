@@ -2,7 +2,7 @@
 
 #include "Mode.h"
 #include "PowerOnSelfTest.h"
-//#include "Initializing.h"
+#include "Initializing.h"
 //#include "Operational.h"
 //#include "Failure.h"
 

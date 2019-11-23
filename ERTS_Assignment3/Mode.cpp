@@ -1,11 +1,16 @@
 #include "Mode.h"
 #include "EmbeddedSystemX.h"
+#include <iostream>
 
 void Mode::selfTestFailed(EmbeddedSystemX*, int errorNo)
 {
 }
 
 void Mode::selfTestOk(EmbeddedSystemX*)
+{
+}
+
+void Mode::systemSelfTest(EmbeddedSystemX*)
 {
 }
 
@@ -56,6 +61,7 @@ void Mode::resume(EmbeddedSystemX*)
 void Mode::chMode(EmbeddedSystemX* x, Mode* m)
 {
 	x->chMode(m);
+	
 }
 
 Mode::Mode()

@@ -4,7 +4,7 @@
 Mode* PowerOnSelfTest::instance_ = 0;
 
 Mode* PowerOnSelfTest::getInstance()
-{
+{	
 	if(instance_ == 0)
 	{
 		instance_ = new PowerOnSelfTest();
@@ -15,18 +15,20 @@ Mode* PowerOnSelfTest::getInstance()
 
 void PowerOnSelfTest::selfTestFailed(EmbeddedSystemX* esx, int ErrorNo)
 {
-	std::cout << "SelfTestFailed";
+	std::cout << "PowerOnSelfTest: SelfTestFailed";
+	//chMode(esx, Failure::getInstance());
 }
 
 void PowerOnSelfTest::selfTestOk(EmbeddedSystemX* esx)
 {
-	std::cout << "SelfTest OK";
+	std::cout << "PowerOnSelfTest: SelfTest OK";
 	chMode(esx, Initializing::getInstance());
 }
 
-void PowerOnSelfTest::systemSelfTest()
+void PowerOnSelfTest::systemSelfTest(EmbeddedSystemX* esx)
 {
-	std::cout << "Running System Self Test...";
+	std::cout << "PowerOnSelfTest: Running System Self Test...";
+	selfTestOk(esx);
 }
 
 PowerOnSelfTest::PowerOnSelfTest()

@@ -1,4 +1,5 @@
 #include "EmbeddedSystemX.h"
+#include <iostream>
 
 
 void EmbeddedSystemX::selfTestOK()
@@ -74,7 +75,10 @@ void EmbeddedSystemX::eventY()
 {
 }
 
-EmbeddedSystemX::EmbeddedSystemX()
+EmbeddedSystemX::EmbeddedSystemX(): versionNo_(1)
 {
+	std::cout << "EmbeddedSystemX: Created. Version number: "<< versionNo_ << std::endl;
+	std::cout << "Mode set to: PowerOnSelfTest" << std::endl;
 	mode_ = PowerOnSelfTest::getInstance();
+	mode_->systemSelfTest(this);
 }

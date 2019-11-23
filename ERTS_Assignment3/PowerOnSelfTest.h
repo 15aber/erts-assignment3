@@ -10,7 +10,7 @@ public:
 	void selfTestFailed(EmbeddedSystemX*, int ErrorNo) override;
 	void selfTestOk(EmbeddedSystemX*) override;
 
-	void systemSelfTest(); //own
+	void systemSelfTest(EmbeddedSystemX*); //own
 	
 protected:
 	PowerOnSelfTest();
