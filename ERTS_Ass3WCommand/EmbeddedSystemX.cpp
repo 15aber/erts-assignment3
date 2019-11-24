@@ -2,6 +2,8 @@
 #include <iostream>
 
 
+
+
 void EmbeddedSystemX::selfTestOK()
 {
 	mode_->selfTestOk(this);
@@ -96,4 +98,9 @@ EmbeddedSystemX::EmbeddedSystemX(): versionNo_(1)
 	std::cout << "Mode set to: PowerOnSelfTest" << std::endl;
 	mode_ = PowerOnSelfTest::getInstance();
 	mode_->systemSelfTest(this);
+}
+
+void EmbeddedSystemX::handleCommand(Command* c) 
+{
+	c->execute(this, mode_);
 }

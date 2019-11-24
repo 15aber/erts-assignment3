@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="EmbeddedSystemX.cpp" />
     <ClCompile Include="ERTS_Ass3WCommand.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="Suspended.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Command.h" />
     <ClInclude Include="Configuration.h" />
     <ClInclude Include="EmbeddedSystemX.h" />
     <ClInclude Include="Failure.h" />

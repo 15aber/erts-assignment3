@@ -2,10 +2,54 @@
 //
 
 #include <iostream>
+#include "EmbeddedSystemX.h"
+#include "Command.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::cout << "Hello World!\n";
+	EmbeddedSystemX esx;
+
+	Command* start = new StartCommand;
+	Command* configure = new ConfigureCommand;
+	Command* configurationEnded = new ConfigurationEndedCommand;
+	Command* stop = new StopCommand;
+	Command* suspend = new SuspendCommand;
+	Command* resume = new ResumeCommand;
+	Command* readConfigurationInfo = new ReadConfigurationInfoCommand;
+	Command* configX = new ConfigXCommand;
+
+	esx.restart();
+	esx.systemSelfTest();
+	esx.startInitializing();
+
+	esx.handleCommand(configure);
+	esx.handleCommand(readConfigurationInfo);
+	esx.handleCommand(configX);
+	esx.handleCommand(configurationEnded);
+	esx.handleCommand(start);
+	esx.handleCommand(suspend);
+	esx.handleCommand(resume);
+	esx.handleCommand(stop);
+
+	esx.restart();
+	
+
+	//delete c1;
+
+	
+
+	//esx.start();
+	//esx.suspend();
+	//esx.resume();
+	//esx.stop();
+	//esx.configure();
+	//esx.readConfigurationInfo();
+	//esx.configX();
+	//esx.configurationEnded();
+	//esx.restart();
+	//esx.systemSelfTest();
+	//esx.exitStateMachine();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Mode.h"
+#include "Command.h"
 #include "PowerOnSelfTest.h"
 #include "Initializing.h"
 //#include "Operational.h"
@@ -12,6 +13,9 @@ class EmbeddedSystemX
 {
 public:
 	EmbeddedSystemX();
+
+	void handleCommand(Command*);
+	
 	void selfTestOK();
 	void initialized();
 	void startInitializing();
