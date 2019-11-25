@@ -20,17 +20,9 @@ public:
 	void initialized();
 	void startInitializing();
 	void restart();
-	void configure();
-	void configurationEnded();
 	void exitStateMachine();
-	void stop();
-	void start();
-	void suspend();
-	void resume();
 	void systemSelfTest();
 	void selfTestFailed(int);
-	void configX();
-	void readConfigurationInfo();
 	void eventX();
 	void eventY();
 	void chMode(Mode* state);

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Command">
+    <Position X="12.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEBAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigXCommand">
+    <Position X="8.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReadConfigurationInfoCommand">
+    <Position X="10.5" Y="18.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartCommand">
+    <Position X="13.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigureCommand">
+    <Position X="15" Y="18.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigurationEndedCommand">
+    <Position X="8.75" Y="16.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StopCommand">
+    <Position X="11.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SuspendCommand">
+    <Position X="13.25" Y="16.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResumeCommand">
+    <Position X="15.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Configuration">
+    <Position X="15.25" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAACBAAAQAgAQAAAAAAAA=</HashCode>
+      <FileName>Configuration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmbeddedSystemX">
+    <Position X="10.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAARAAAAAAAABAAAARAIAAgEIAAAQAAAAAMAE=</HashCode>
+      <FileName>EmbeddedSystemX.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Failure">
+    <Position X="13" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAFAgASAAAAAAAAAAAA=</HashCode>
+      <FileName>Failure.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Initializing">
+    <Position X="15.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQBAAAAAAAAAAAAAQAABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Initializing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mode">
+    <Position X="13.75" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAAAZIAAAAgAAFAAAAQQCEggAAAAAQgAAAAAAE=</HashCode>
+      <FileName>Mode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Operational">
+    <Position X="8.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Operational.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerOnSelfTest">
+    <Position X="10.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAIAAAAAEAAAAAAABAAAQAAAAAAAAAAAE=</HashCode>
+      <FileName>PowerOnSelfTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ready">
+    <Position X="8.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAQABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Ready.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RealTimeLoop">
+    <Position X="10.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABgAAQAAAAgAAAAAAA=</HashCode>
+      <FileName>RealTimeLoop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Suspended">
+    <Position X="13" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAABgAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Suspended.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
