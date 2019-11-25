@@ -24,39 +24,9 @@ void EmbeddedSystemX::restart()
 	mode_->restart(this);
 }
 
-void EmbeddedSystemX::configure()
-{
-	mode_->configure(this);
-}
-
-void EmbeddedSystemX::configurationEnded()
-{
-	mode_->configurationEnded(this);
-}
-
 void EmbeddedSystemX::exitStateMachine()
 {
 	mode_->exitStateMachine(this);
-}
-
-void EmbeddedSystemX::stop()
-{
-	mode_->stop(this);
-}
-
-void EmbeddedSystemX::start()
-{
-	mode_->start(this);
-}
-
-void EmbeddedSystemX::suspend()
-{
-	mode_->suspend(this);
-}
-
-void EmbeddedSystemX::resume()
-{
-	mode_->resume(this);
 }
 
 void EmbeddedSystemX::systemSelfTest()
@@ -67,16 +37,6 @@ void EmbeddedSystemX::systemSelfTest()
 void EmbeddedSystemX::selfTestFailed(int errorNo)
 {
 	mode_->selfTestFailed(this, errorNo);
-}
-
-void EmbeddedSystemX::configX()
-{
-	mode_->configX(this);
-}
-
-void EmbeddedSystemX::readConfigurationInfo()
-{
-	mode_->readConfigurationInfo(this);
 }
 
 void EmbeddedSystemX::chMode(Mode* state)
