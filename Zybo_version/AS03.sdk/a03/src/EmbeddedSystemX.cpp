@@ -1,0 +1,107 @@
+#include "EmbeddedSystemX.h"
+#include <iostream>
+
+
+
+
+void EmbeddedSystemX::selfTestOK()
+{
+	mode_->selfTestOk(this);
+}
+
+void EmbeddedSystemX::initialized()
+{
+	mode_->initialized(this);
+}
+
+void EmbeddedSystemX::startInitializing()
+{
+	mode_->startInitializing(this);
+}
+
+void EmbeddedSystemX::restart()
+{
+	mode_->restart(this);
+}
+
+void EmbeddedSystemX::configure()
+{
+	mode_->configure(this);
+}
+
+void EmbeddedSystemX::configurationEnded()
+{
+	mode_->configurationEnded(this);
+}
+
+void EmbeddedSystemX::exitStateMachine()
+{
+	mode_->exitStateMachine(this);
+}
+
+void EmbeddedSystemX::stop()
+{
+	mode_->stop(this);
+}
+
+void EmbeddedSystemX::start()
+{
+	mode_->start(this);
+}
+
+void EmbeddedSystemX::suspend()
+{
+	mode_->suspend(this);
+}
+
+void EmbeddedSystemX::resume()
+{
+	mode_->resume(this);
+}
+
+void EmbeddedSystemX::systemSelfTest()
+{
+	mode_->systemSelfTest(this);
+}
+
+void EmbeddedSystemX::selfTestFailed(int errorNo)
+{
+	mode_->selfTestFailed(this, errorNo);
+}
+
+void EmbeddedSystemX::configX()
+{
+	mode_->configX(this);
+}
+
+void EmbeddedSystemX::readConfigurationInfo()
+{
+	mode_->readConfigurationInfo(this);
+}
+
+void EmbeddedSystemX::chMode(Mode* state)
+{
+	this->mode_ = state;
+}
+
+void EmbeddedSystemX::eventX()
+{
+}
+
+void EmbeddedSystemX::eventY()
+{
+}
+
+EmbeddedSystemX::EmbeddedSystemX(): versionNo_(1)
+{
+	xil_printf("EmbeddedSystemX: Created.");
+//	xil_printf(versionNo_);
+	xil_printf("\r\nMode set to: PowerOnSelfTest\r\n");
+	mode_ = PowerOnSelfTest::getInstance();
+	mode_->systemSelfTest(this);
+}
+
+void EmbeddedSystemX::handleCommand(Command* c) 
+{
+	c->execute(this, mode_);
+}
